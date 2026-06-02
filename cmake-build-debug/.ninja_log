@@ -1,0 +1,5 @@
+# ninja log v7
+1	167	1780415633189098834	CMakeFiles/rpf.dir/library.cpp.o	b67ed4bf12b343bb
+168	204	1780415633356103875	librpf.so	e07d6081a304501f
+1	22	1780416206937700039	build.ninja	a1017fcab7988eae
+1	22	1780416206937700039	/home/think/Documents/GitHub/rpf/cmake-build-debug/cmake_install.cmake	a1017fcab7988eae
