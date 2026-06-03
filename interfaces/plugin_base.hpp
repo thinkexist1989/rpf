@@ -20,14 +20,12 @@ class PluginBase {
  public:
   enum class State { Unloaded, Loaded, Initialized, Error };
 
-  enum class Type { Hardware, Planner, Controller, Kinematics, Dynamics };
+  enum class Type { Hardware, Planner, Controller, Kinematics, Dynamics, Unknown };
 
   virtual ~PluginBase() = default;
 
   // 生命周期
-  virtual bool Initialize() = 0;
-  virtual bool Start() = 0;
-  virtual bool Stop() = 0;
+  virtual bool Initialize() = 0;  // TODO: 初始化应该要删掉，因为不用的插件初始化的依赖注入不一样
   virtual void Unload() = 0;
 
   // 状态查询
